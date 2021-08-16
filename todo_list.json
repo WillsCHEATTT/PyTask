@@ -1,0 +1,6 @@
+{
+   "cop": ["shop", "[Robo]"],
+   "stop": ["lop", "[One]"],
+   "crop": ["top", "[rop]"],
+   "EOF": "Serves as a place holder to meet syntax of json files ** More info on github page"
+}
