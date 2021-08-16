@@ -1,6 +1,6 @@
 # PyTask
 
-Hello here is a project that is not finished but I still wanted to upload something to github, so here is **PyTask**. If you want to learn more about PyTask, you can read me. Once you have finished reading this, you should understand the basics of PyTask. For more indepth with code example kinda stuff look to the wiki!
+Hello here is a project that is not finished but I still wanted to upload something to github, so here is **PyTask**. If you want to learn more about PyTask, you can read me. Once you have finished reading this, you should understand the basics of PyTask.
 
 
 # Commands
@@ -9,7 +9,7 @@ PyTask has a **plethora** of commands... ok so that may be a lie but there are s
 
 ## Add
 
-The add command is the most vital part of PyTask. Without it this wouldn't even be a task manager. Using it is really simple (for the most part) but if you would like more in-depth explanations look at the wiki.
+The add command is the most vital part of PyTask. Without it this wouldn't even be a task manager. Using it is really simple (for the most part)
 `add [TITLE] [DESC] [LABEL]`
 
 
