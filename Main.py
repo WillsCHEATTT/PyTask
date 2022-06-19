@@ -51,7 +51,14 @@
 import os
 import readline
 import json
+import platform
 #---------------------------#
+
+global clear_command
+
+if platform.system() == "Windows": clear_command = "cls"
+else:
+    clear_command = "clear"
 
 todo_list = {}
 running = True  # Made for quit().. Yes I do know that exit() does exist. Why use this way. Well I dont know I just felt like doing it.
@@ -308,11 +315,9 @@ Quit, pretty simple all it does is quits the application / program ** same resul
 
 # cls command
 # ------------------------------------------------------------------------------------------------------------
-        # Windows inspired screen clear
         def cls():
             global log
-            print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
-
+            os.system(clear_command)
 
 # clear command
 # ------------------------------------------------------------------------------------------------------------
@@ -330,7 +335,13 @@ Quit, pretty simple all it does is quits the application / program ** same resul
         def add(title, desc=None, label=None):
             global todo_list
             global log
-            todo_list |= {str(title):["" if desc == None else str(desc),"" if label == None else '['+str(label)+']']}
+            #todo_list |= {str(title):["" if desc == None else str(desc),"" if label == None else '['+str(label)+']']}
+            
+            todo_list[str(title)] = [
+                    "" if desc == None else str(desc), 
+                    "" if label == None else '[' + str(label) + ']' 
+                    ]
+
             log.append(f"new entry '{title}'"+str("" if desc == None else f" with the description of '{desc}'"))
 
 
